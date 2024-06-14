@@ -1,0 +1,145 @@
+body {
+    background-color: #87ceeb;
+}h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+#p1{
+    color: red;
+    font-size: 3em;
+}
+.post-it{
+    border: 5px solid;
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(246, 246, 62);
+}
+.post-it:hover{
+    box-shadow: 3px 3px 100px;
+}
+#About{
+    font-size: 30px;
+    margin: 0;
+}
+#line1{
+    padding-bottom: 0;
+    margin: 0;
+    font-size: 1.5em;
+}
+#div-hr{
+    margin: 0 0;
+}
+
+#div-hr2 {  
+    margin-top: 30px;
+}
+#right-arrow{
+    font-size: 10em;
+    float: right;
+    margin: 0;
+    transform: translate(400px,0px);
+}
+#left-arrow{
+    font-size: 10em;
+    float: left;
+    margin: 0;
+    transform: translate(-400px,-42px);
+}
+
+#education{
+    transform: translate(630px,100px);
+}
+#contact{
+    transform: translate(-520px,65px);
+}
+a:link{
+    color: black;
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    color: rgb(207, 202, 202);
+}
+#note{
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .post-it{
+        height: 400px;
+        width: 400px;
+    }
+    #line1{
+        font-size: 1.2em;
+    }
+    #right-arrow{
+        font-size: 10em;
+        transform: translate(100px,0px);
+    }
+    #left-arrow{
+        font-size: 10em;
+        transform: translate(-50px,-42px);
+    }
+    #education{
+        transform: translate(280px,100px);
+    }
+    #contact{
+        transform: translate(-120px,65px);
+    }
+}
+
+@media (max-width: 600px) {
+    .post-it{
+        height: 200px;
+        width: 200px;
+    }
+    #line1{
+        font-size: 0.6em;
+    }
+    #right-arrow{
+        font-size: 5em;
+        transform: translate(100px,-15px);
+    }
+    #left-arrow{
+        font-size: 5em;
+        transform: translate(-50px,-42px);
+    }
+    #education{
+        font-size: 10px;
+        transform: translate(180px,41px);
+    }
+    #contact{
+        font-size: 10px;
+        transform: translate(-90px,20px);
+    }
+}
+
+@media print {
+    .post-it {
+        background-color: rgb(246, 246, 62) !important; 
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+ 
+    }
+    #right-arrow{
+        font-size: 0em;
+    }
+    #left-arrow{
+        font-size: 0em;
+    }
+    #education{
+        font-size: 0px;
+    }
+    #contact{
+        font-size: 0px;
+    }
+    .post-it:hover{
+        box-shadow: none;
+    }
+    
+}

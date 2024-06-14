@@ -1,0 +1,162 @@
+body {
+    background-color: #87ceeb;
+}h1 {
+    text-align: center;
+}
+
+.container{
+    display: flex;  
+    justify-content: space-evenly;
+}
+.box{
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.box li{
+    text-align: left;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+h4{
+    text-align: center;
+}
+#box1{
+    background-color: rgb(246, 246, 62);
+}
+#box1:hover{
+    box-shadow: 3px 3px 100px;
+}
+#box2{
+    background-color: rgb(246, 246, 62);
+}
+#box2:hover{
+    box-shadow: 3px 3px 100px;
+}
+li{
+    transform: translate(10px,0px);
+    
+}
+#right-arrow{
+    font-size: 10em;
+    float: right;
+    margin: 0;
+    transform: translate(-125px,100px);
+   
+}
+#left-arrow{
+    font-size: 10em;
+    float: right;
+    margin: 0;
+    transform: translate(-1100px,50px);
+   
+}
+#contact{
+    transform: translate(1600px,210px);
+}
+#about{
+    transform: translate(570px,180px);
+}
+a:link{
+    color: black;
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    color: rgb(207, 202, 202);
+}
+.even-line{
+    margin-top: 30.2px;
+    margin-bottom: 30.2px;
+}
+#note{
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container{
+        display: grid;  
+        justify-content: space-evenly;
+    }
+    #note{
+        text-align: center;
+        font-size: 1em;
+    }
+    .post-it{
+        height: 200px;
+        width: 200px;
+    }
+    #line1{
+        font-size: 0.8em;
+    }
+    #right-arrow{
+        font-size: 10em;
+        float: right;
+        margin: 0;
+        transform: translate(0px,100px);
+    }
+    #left-arrow{
+        font-size: 10em;
+        float: right;
+        margin: 0;
+        transform: translate(-300px,53px);
+    }
+   #note{
+    font-size: 10px;
+    text-align: center;
+   }
+   #about{
+    transform: translate(460px,160px);
+   }
+   #contact{
+    transform: translate(38px,200px);
+   }
+    
+}
+
+
+@media (max-width: 630.4px) {
+    #right-arrow{
+        font-size: 5em;
+        transform: translate(0px,150px);
+    }
+    #left-arrow{
+        font-size: 5em;
+        transform: translate(-200px,110px);
+    }
+    #about{
+        transform: translate(280px,160px);
+        font-size: 0.8em;
+    }
+    #contact{
+        transform: translate(38px,190px);
+        font-size: 0.8em;
+    }
+}
+@media print {
+    .box {
+        background-color: rgb(246, 246, 62) !important; 
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+ 
+    }
+    #right-arrow{
+        font-size: 0em;
+    }
+    #left-arrow{
+        font-size: 0em;
+    }
+    #about{
+        font-size: 0px;
+    }
+    #contact{
+        font-size: 0px;
+    }
+    .box:hover{
+        box-shadow: none;
+    }
+    
+}
